@@ -10,10 +10,6 @@ public class B10952 {
         int input1 = Integer.parseInt(br.readLine());
         int input2 = Integer.parseInt(br.readLine());
 
-        if (input1 != 0 && input2 != 0) {
-            for (int i = 0; i < ; i++) {
 
-            }
-        }
     }
 }
