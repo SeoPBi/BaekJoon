@@ -10,26 +10,22 @@ public class B10807 {
 
         int N = Integer.parseInt(br.readLine());
         int count = 0;
-        int[] arr = new int[N];
+        int arr[] = new int[N];
 
-        StringTokenizer st = new StringTokenizer(br.readLine());;
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
-        for(int i = 0; i < N; i++){
+        for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
         int b = Integer.parseInt(br.readLine());
 
-        for(int j = 0; j < arr.length; j++){
-            if(b == arr[j]) {
+        for (int i = 0; i < arr.length; i++) {
+            if(b == arr[i]) {
                 count++;
             }
         }
-        System.out.println(count);
+        System.out.println();
 
-        br.close();
-        bw.flush();
-        bw.close();
-        }
     }
 }
