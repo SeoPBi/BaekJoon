@@ -3,19 +3,17 @@ package Step3;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class B10952_4 {
-    public static void main(String[] args) throws IOException {
+public class B10951 {
+     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        while (true) {
+        for (int i = 0; i < 5; i++) {
             String str = br.readLine();
             StringTokenizer st = new StringTokenizer(str, " ");
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
             int sum = a + b;
-
-            if (sum == 0) break;
 
             bw.write(String.valueOf(sum));
             bw.newLine();
