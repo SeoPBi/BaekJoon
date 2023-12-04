@@ -4,9 +4,8 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class B11931 {
+public class B11931_2 {
     public static void main(String[] args) throws IOException {
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(br.readLine());
@@ -19,12 +18,7 @@ public class B11931 {
         Arrays.sort(arr, Collections.reverseOrder());
 
         for (int j = 0; j < arr.length; j++) {
-            bw.write(String.valueOf(arr[j]) + "\n");
+            System.out.print(arr[j] + "\n");
         }
-
-        bw.flush();
-        bw.close();
-        br.close();
     }
 }
-
